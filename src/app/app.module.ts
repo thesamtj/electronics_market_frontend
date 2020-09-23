@@ -9,6 +9,7 @@ import { RegisterComponent } from './register/register.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
     HomeComponent,
     LoginComponent,
     RegisterComponent,
-    NavMenuComponent
+    NavMenuComponent,
   ],
   imports: [
     BrowserModule,
@@ -24,8 +25,9 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    ModalModule.forRoot(),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
