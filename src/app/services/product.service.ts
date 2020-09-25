@@ -1,4 +1,8 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { Product } from '../interfaces/product';
+import { flatMap, first, shareReplay } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root',
