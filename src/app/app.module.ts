@@ -8,10 +8,8 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { ModalModule } from 'ngx-bootstrap/modal';
-import { ProductDetailsComponent } from './products/product-details/product-details.component';
-import { ProductListComponent } from './products/product-list/product-list.component';
 
 @NgModule({
   declarations: [
@@ -20,8 +18,6 @@ import { ProductListComponent } from './products/product-list/product-list.compo
     LoginComponent,
     RegisterComponent,
     NavMenuComponent,
-    ProductDetailsComponent,
-    ProductListComponent,
   ],
   imports: [
     BrowserModule,
