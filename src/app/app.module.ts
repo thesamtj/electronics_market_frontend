@@ -10,6 +10,7 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { ProductDetailsComponent } from './products/product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     LoginComponent,
     RegisterComponent,
     NavMenuComponent,
+    ProductDetailsComponent,
   ],
   imports: [
     BrowserModule,
