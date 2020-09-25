@@ -13,6 +13,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { DataTablesModule } from 'angular-datatables';
 import { JwtInterceptor } from './_helpers/jwt.Interceptor';
 import { AuthGuardService } from './guards/auth-guard.service';
+import { AccessDeniedComponent } from './errors/access-denied/access-denied.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { AuthGuardService } from './guards/auth-guard.service';
     LoginComponent,
     RegisterComponent,
     NavMenuComponent,
+    AccessDeniedComponent,
   ],
   imports: [
     BrowserModule,
