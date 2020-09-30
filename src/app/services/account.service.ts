@@ -14,9 +14,9 @@ export class AccountService {
   constructor(private http: HttpClient, private router: Router) {}
 
   // Url to access our Web API’s
-  private baseUrlLogin: string = '/api/account/login';
+  private baseUrlLogin: string = 'http://localhost:51595/api/account/login';
 
-  private baseUrlRegister: string = '/api/account/register';
+  private baseUrlRegister: string = 'http://localhost:51595/api/account/register';
 
   // User related properties
   private loginStatus = new BehaviorSubject<boolean>(this.checkLoginStatus());
