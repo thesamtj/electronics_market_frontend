@@ -78,6 +78,7 @@ export class ProductListComponent implements OnInit, OnDestroy {
   // Method to Add new Product
   onSubmit() {
     let newProduct = this.insertForm.value;
+    console.log(newProduct);
 
     this.productservice.insertProduct(newProduct).subscribe(
       (result) => {
@@ -92,7 +93,7 @@ export class ProductListComponent implements OnInit, OnDestroy {
         });
         console.log('New Product added');
       },
-      (error) => console.log('Could not add Product')
+      (error) => console.log(error)
     );
   }
 
