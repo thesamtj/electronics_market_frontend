@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
   {
     path: 'products',
-    loadChildren: './products/products.module#ProductsModule',
+    loadChildren: () => import('./products/products.module').then(m => m.ProductsModule)
   },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
