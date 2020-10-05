@@ -29,7 +29,7 @@
         <td>{{ product.productId }}</td>
         <td>{{ product.name | uppercase }}</td>
         <td>{{ product.description }}</td>
-        <td>{{ true == product.outofstock ? "No " : "Yes " }}</td>
+        <td>{{ true == product.outOfStock ? "No " : "Yes " }}</td>
         <td>{{ product.price | currency: "CAD":"symbol-narrow":".2" }}</td>
         <td>
           <img
