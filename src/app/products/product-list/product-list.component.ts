@@ -124,7 +124,7 @@ export class ProductListComponent implements OnInit, OnDestroy {
           this.rerender();
         });
       },
-      (error) => console.log('Could Not Update Product')
+      (error) => console.log(error)
     );
   }
 
