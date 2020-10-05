@@ -10,13 +10,13 @@ import { flatMap, first, shareReplay } from 'rxjs/operators';
 export class ProductService {
   constructor(private http: HttpClient) {}
 
-  private baseUrl: string = '/api/product/getproducts';
+  private baseUrl: string = 'http://localhost:51595/api/product/getproducts';
 
-  private productUrl: string = '/api/product/addproduct';
+  private productUrl: string = 'http://localhost:51595/api/product/addproduct';
 
-  private deleteUrl: string = '/api/product/deleteproduct/';
+  private deleteUrl: string = 'http://localhost:51595/api/product/deleteproduct/';
 
-  private updateUrl: string = '/api/product/updateproduct/';
+  private updateUrl: string = 'http://localhost:51595/api/product/updateproduct/';
 
   private product$: Observable<Product[]>;
 
