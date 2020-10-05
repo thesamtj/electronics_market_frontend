@@ -78,7 +78,7 @@ export class ProductListComponent implements OnInit, OnDestroy {
   // Method to Add new Product
   onSubmit() {
     let newProduct = this.insertForm.value;
-    console.log(newProduct);
+    // console.log(newProduct);
 
     this.productservice.insertProduct(newProduct).subscribe(
       (result) => {
